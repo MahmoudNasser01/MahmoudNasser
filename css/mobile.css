@@ -1,0 +1,55 @@
+@media screen and (max-width:768px){
+
+********Start NavBar******/
+   .navbar{
+    background-color:rgba(255, 255, 255, 1) !important;
+    padding:0px 10px;
+   }
+    .navbar-nav{
+        float:none;
+        text-align: center;
+        
+    }
+    .navbar-brand h5{
+        margin-top:3px;
+        font-size:20px;
+      }
+
+    .navbar-light .navbar-nav .nav-item {
+        color:#000;
+       
+        padding:10px 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+}
+   
+    .navbar-toggler-icon{
+        width:1rem;
+        height:1rem
+    }
+    
+    /******End NavBar******/
+
+    /************Start Banner Section ***********/
+
+    .main_row h1{
+        font-size:3rem;
+    }
+    .main_row h2:last-child{
+        font-size:17px
+    }
+    .shapes .cubeshape2{
+        display: none;
+    }
+    /***********End Banner Section **************/
+
+    /*************Start Footer Section ****************/
+
+    footer h5{
+        font-size:15px
+    }
+    /*************End Footer Section *****************/
+}

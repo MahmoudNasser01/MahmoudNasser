@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color:#1f2235;
+  
+}
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+/*******************STart NavBar**********************/
+/*******************Start navbar ************************/
+.navbar {
+  color: #222;
+  padding: 20px 60px;
+  background-color:rgba(255, 255, 255, 0.979);
+}
+.navbar-brand h5{
+  font-size:30px;
+}
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  margin: 0 10px;
+  font-weight: bolder;
+  font-size: 20px
+}
+.nav-item a:hover{
+  color:#FFC107;
+}
+.navbar-toggler {
+  outline: none;
+}
+
+.active-navbar-normal-black {
+  color: #000;
+}
+
+.active-navbar-main-color {
+  color: var(--main-color)!important;
+}
+
+/********************End NavBar***********************/
+.main-container{
+  min-height: 100vh;
+  padding-top:5rem ;
+  overflow: hidden;
+}
+.main_row{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_row h1{
+  font-size: 5rem;
+}
+
+.main-container img{
+  animation: ballshape 4s linear infinite;
+}
+/*********Start shapes*******/
+
+.shapes .cubeshape {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 255, 255, 0.431);
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  z-index: 1;
+  animation: cubeshape 5s linear infinite;
+  transform: rotateX(45);
+}
+
+.shapes .cubeshape2 {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 255, 255, 0.431);
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  z-index: 1;
+  animation: cubeshape 5s linear infinite;
+  transform: rotateX(45);
+}
+
+@keyframes cubeshape {
+  0%,
+  100% {
+      transform: rotate(45deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+}
+
+.shapes .ballshape {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.431);
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: -100px;
+  z-index: 1;
+  animation: ballshape 4s linear infinite;
+}
+
+@keyframes ballshape {
+  0%,
+  100% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(70px);
+  }
+}
+
+
+/*********End shapes*******/
+
+
+/*****************STart About Me Section ***************/
+#about{
+  background-color:#313552;
+  border-radius: .5rem;
+}
+
+
+/******************End About Me Section *****************/
+
+#projects{
+ 
+  margin:auto !important;
+}
+.card{
+  border-bottom: 8px solid orange;
+}
+
+/****************Start Social Media ***********************/
+#social_media{
+  background-color: #313552;
+}
+
+.media_link{
+  padding:1rem;
+  max-width: 15rem;
+  margin-left: 1rem;
+  border:2px solid orange;
+  border-radius: .5rem;
+  cursor: pointer;
+
+}
+.media_link:hover{
+  color:#fff;
+  background-color:orange;
+}
+/***************End Social Media*************************/
